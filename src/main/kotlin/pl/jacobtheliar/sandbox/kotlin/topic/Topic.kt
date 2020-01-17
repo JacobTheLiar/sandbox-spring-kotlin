@@ -20,4 +20,8 @@ class Topic {
     var name: String = "";
     var description: String ="";
 
+
+    constructor(id: Int) {
+        this.id = id
+    }
 }

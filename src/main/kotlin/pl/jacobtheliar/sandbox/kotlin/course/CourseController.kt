@@ -16,7 +16,7 @@ import pl.jacobtheliar.sandbox.kotlin.topic.Topic
 class CourseController(private val courseService: CourseService) {
 
     @GetMapping("/topics/{topicId}/courses")
-    fun getAllCouses(@PathVariable("topicId") _topicId: Int) : List<Course>{
+    fun getAllCourses(@PathVariable("topicId") _topicId: Int) : List<Course>{
         val topic = Topic(_topicId);
         return courseService.getAllCoursesByTopic(topic);
     }
